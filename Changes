@@ -1,5 +1,9 @@
 Revision history for Perl extension Path-Maker
 
+0.003 2014-01-19T13:16:55Z
+
+    - skip chmod tests if MSWin32
+
 0.002 2014-01-19T07:50:35Z
 
     - first cpan release version

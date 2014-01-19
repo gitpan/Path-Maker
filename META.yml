@@ -28,7 +28,7 @@ no_index:
 provides:
   Path::Maker:
     file: lib/Path/Maker.pm
-    version: 0.002
+    version: 0.003
 requires:
   Data::Section::Simple: 0
   Text::MicroTemplate::File: 0
@@ -38,4 +38,4 @@ resources:
   bugtracker: https://github.com/shoichikaji/Path-Maker/issues
   homepage: https://github.com/shoichikaji/Path-Maker
   repository: git://github.com/shoichikaji/Path-Maker.git
-version: 0.002
+version: 0.003
