@@ -1,5 +1,9 @@
 Revision history for Perl extension Path-Maker
 
+0.004 2014-07-27T06:19:46Z
+
+    - chomp templates in __DATA__ section
+
 0.003 2014-01-19T13:16:55Z
 
     - skip chmod tests if MSWin32

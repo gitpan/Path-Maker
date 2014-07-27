@@ -7,7 +7,7 @@ cpanfile
 eg/module-scaffold.pl
 eg/share/Changes
 eg/share/Makefile.PL
-eg/share/Module.pm
+eg/share/Module
 eg/share/script.pl
 eg/share/t/00_compile.t
 eg/template-header.pl
@@ -19,6 +19,7 @@ t/02_header.t
 t/03_utf8.t
 t/04_package.t
 t/05_template_dir.t
+t/06_chomp.t
 t/My.pm
 t/Util.pm
 META.yml

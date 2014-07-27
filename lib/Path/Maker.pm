@@ -8,7 +8,7 @@ use File::Path qw(mkpath);
 use File::Basename qw(dirname);
 use File::Spec::Functions qw(catdir catfile file_name_is_absolute);
 
-our $VERSION = "0.003";
+our $VERSION = "0.004";
 
 {
     package
@@ -28,6 +28,7 @@ our $VERSION = "0.003";
     sub _find_data {
         my ($self, $file) = @_;
         if (my $data = $self->{section}->get_data_section($file)) {
+            $data =~ s{\n{2}$}{\n};
             return $data;
         } elsif ($self->{template_dir}) {
             return $self->_slurp( catfile($self->{template_dir}, $file) );
@@ -221,7 +222,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Shoichi Kaji E<lt>skaji@outlook.comE<gt>
+Shoichi Kaji E<lt>skaji@cpan.orgE<gt>
 
 =cut
 
